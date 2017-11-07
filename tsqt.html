@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="tsqt.css">
 	<script>
 	function sums(){
-		
+	  document.getElementById("sum").value="1";
 	}
 	</script>
   </head>
@@ -68,12 +68,19 @@
 			</div>
 			<hr />
 			<div class="center">
-				<input type="submit" value="确定"/>
+				<button type="button" onclick="sums()">确定</button>
 				<input type="reset" value="重置"/>
 			</div>
 			<hr />
-			<div class="center">属性：<script>sums();</script>
-			</div>
+			<div class="center">
+			  <table>
+			    <tr>
+			    <td>属性:&nbsp;&nbsp;</td>
+			    <td><input type="text" id="sum" class="grade"/></td>
+			    </tr>
+			  </table>
+			</div》
+			
 			<hr />
 		</form>
 	</div>
