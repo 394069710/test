@@ -1,0 +1,81 @@
+<!DOCTYPE HTML">
+<html>
+  <head>
+    <title>宠物属性计算</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<link rel="stylesheet" type="text/css" href="tsqt.css">
+	<script>
+	function sums(){
+		
+	}
+	</script>
+  </head>
+  
+  <body>
+  	<h1>宠物属性计算器</h1>
+  	<div class="tsqt">
+  	<hr />
+    	<form action="" method="get">
+    		<div class="center">
+    			<table>
+    				<tr>
+    				<td>宠物等级：</td>
+    				<td><input type="text" name="gradeFirst" class="grade" value="1" required/> - <input type="text" name="gradeEnd" class="grade" value="160" required/></td>
+    				</tr>
+					<tr>
+					<td>原始宠物资质：</td><td><input type="text" name="original" class="zz"   required/></td>
+					</tr>
+					<tr>
+					<td>进化宠物资质：</td><td><input type="text" name="evolve" class="zz"  required/></td>
+					</tr>
+				</table>
+			</div>
+			<hr />
+			<div class="center">
+				资质丹：<br />
+				<table>
+					<tr>
+					<td>灵：</td>
+					<td><input type="text" name="linGrade" class="grade" value="0" required/><td>
+					</tr>
+					<tr>
+					<td>玄：</td>
+					<td><input type="text" name="xuanGrade" class="grade" value="0" required/><td>
+					</tr>
+					<tr>
+					<td>神：</td>
+					<td><input type="text" name="shenGrade" class="grade" value="0" required/><td>
+					</tr>
+				</table>
+			</div>
+			<hr />
+			<div class="center">
+				<table>
+					<td><input type="checkbox" name="awaken" value="1"/>觉醒</td>
+					<td>&nbsp;&nbsp;成长率</td>
+					<td><select name="growUp">
+					<option value="400" selected>不变异</option>
+					<option value="360">变异360</option>
+					<option value="380">变异380</option>
+					<option value="400">变异400</option>
+					</select></td>
+					</tr>
+				</table>
+			</div>
+			<hr />
+			<div class="center">
+				<input type="submit" value="确定"/>
+				<input type="reset" value="重置"/>
+			</div>
+			<hr />
+			<div class="center">属性：<script>sums();</script>
+			</div>
+			<hr />
+		</form>
+	</div>
+  </body>
+</html>
